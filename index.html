@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ShieldPro Solutions | Commercial Roofing</title>
+
+<style>
+:root {
+  --dark: #0b0f1a;
+  --steel: #111827;
+  --blue: #2563eb;
+  --gray: #9ca3af;
+  --light: #f9fafb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: var(--dark);
+  color: var(--light);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 24px;
+}
+
+/* HEADER */
+header {
+  background: rgba(11,15,26,0.95);
+  border-bottom: 1px solid #1f2937;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+}
+
+.nav img {
+  height: 50px;
+}
+
+.nav .phone {
+  font-size: 18px;
+  font-weight: 700;
+  color: #93c5fd;
+}
+
+/* HERO */
+.hero {
+  background:
+    linear-gradient(to right, rgba(11,15,26,0.92), rgba(11,15,26,0.6)),
+    url('https://images.unsplash.com/photo-1581092160607-ee67a7c24b52?auto=format&fit=crop&w=1600&q=80');
+  background-size: cover;
+  background-position: center;
+  padding: 120px 0;
+}
+
+.hero h1 {
+  font-size: 56px;
+  font-weight: 900;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.hero span {
+  color: var(--blue);
+}
+
+.hero p {
+  max-width: 620px;
+  font-size: 20px;
+  color: var(--gray);
+}
+
+.hero .cta {
+  margin-top: 30px;
+  display: inline-block;
+  background: var(--blue);
+  padding: 16px 32px;
+  font-size: 18px;
+  font-weight: 800;
+  border-radius: 6px;
+}
+
+/* TRUST BAR */
+.trust {
+  background: var(--steel);
+  padding: 40px 0;
+}
+
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 20px;
+  text-align: center;
+}
+
+.trust strong {
+  font-size: 26px;
+  color: var(--blue);
+}
+
+/* SECTIONS */
+section {
+  padding: 90px 0;
+}
+
+section h2 {
+  font-size: 40px;
+  font-weight: 900;
+  margin-bottom: 40px;
+}
+
+/* SERVICES */
+.services {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 30px;
+}
+
+.service {
+  background: linear-gradient(145deg, #0f172a, #020617);
+  padding: 30px;
+  border-left: 5px solid var(--blue);
+}
+
+.service h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+/* ABOUT */
+.about {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 40px;
+}
+
+/* CONTACT */
+.contact-box {
+  background: linear-gradient(145deg, #1e3a8a, #020617);
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.contact-box .big {
+  font-size: 36px;
+  font-weight: 900;
+  margin-top: 10px;
+}
+
+/* FOOTER */
+footer {
+  background: #020617;
+  padding: 40px 0;
+  border-top: 1px solid #1f2937;
+}
+
+/* MOBILE */
+@media(max-width: 900px) {
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .services,
+  .trust-grid,
+  .about {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="container nav">
+    <img src="shieldpro-logo.png" alt="ShieldPro Solutions">
+    <div class="phone">CALL 412-977-8289</div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <h1>Commercial Roofing<br><span>Built for Protection</span></h1>
+    <p>
+      ShieldPro Solutions delivers high-performance commercial roofing systems,
+      inspections, repairs, and maintenance for industrial and commercial buildings.
+    </p>
+    <a href="tel:14129778289" class="cta">GET A FREE CONSULTATION</a>
+  </div>
+</section>
+
+<section class="trust">
+  <div class="container trust-grid">
+    <div><strong>Commercial</strong><br>Focused</div>
+    <div><strong>Emergency</strong><br>Response</div>
+    <div><strong>Preventative</strong><br>Maintenance</div>
+    <div><strong>Long-Term</strong><br>Protection</div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service"><h3>Roof Installation & Replacement</h3>High-performance systems designed for durability.</div>
+      <div class="service"><h3>Leak Detection & Repairs</h3>Fast response to stop damage and downtime.</div>
+      <div class="service"><h3>Preventative Maintenance</h3>Programs that extend roof life and cut costs.</div>
+      <div class="service"><h3>Roof Inspections</h3>Clear, honest assessments you can trust.</div>
+      <div class="service"><h3>Storm Damage Service</h3>Rapid emergency response when it matters.</div>
+      <div class="service"><h3>Commercial Roofing Systems</h3>Flat & low-slope solutions for all building types.</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container about">
+    <div>
+      <h2>Why ShieldPro Solutions</h2>
+      <p>
+        We specialize exclusively in commercial roofing. Our focus is protection,
+        performance, and long-term value — not quick fixes or shortcuts.
+      </p>
+    </div>
+    <div class="contact-box">
+      <div>Call Today</div>
+      <div class="big">412-977-8289</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <strong>ShieldPro Solutions</strong><br>
+    Commercial Roofing Experts
+  </div>
+</footer>
+
+</body>
+</html>
